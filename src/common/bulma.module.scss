@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+$family-sans-serif: "Nunito", sans-serif;
+
+$purple: #6659f7;
+$turquoise: #36bea6;
+$red: #f62d51;
+$cyan: #00b0ff;
+$blue: #2962FF;
+
+$primary: $purple;
+
+@import "bulma/bulma.sass";
+
+.flex-center {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}

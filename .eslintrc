@@ -1,0 +1,12 @@
+{
+  "extends": "react-app",
+  "rules": {
+    "indent": ["error", 2],
+    "linebreak-style": ["error", "unix"],
+    "quotes": ["error", "single"],
+    "semi": ["error", "always"],
+    "key-spacing": ["warn", { "align": "colon" }],
+    "operator-linebreak": ["warn", "before"],
+    "multiline-ternary": ["warn", "always-multiline"]
+  }
+}
