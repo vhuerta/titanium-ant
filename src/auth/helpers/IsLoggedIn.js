@@ -5,7 +5,7 @@ import { Query } from 'react-apollo';
 import { GET_CURRENT_USER } from '../Auth.gql';
 
 function IsLoggedIn(Component) {
-  return props => {
+  function _IsLoggedIn(props) {
     return (
       <Query query={GET_CURRENT_USER}>
         {({ data: { currentUser } }) => {
@@ -17,7 +17,9 @@ function IsLoggedIn(Component) {
         }}
       </Query>
     );
-  };
+  }
+
+  return _IsLoggedIn;
 }
 
 export default IsLoggedIn;
