@@ -5,7 +5,6 @@ import { Query } from 'react-apollo';
 import { VERIFY_TOKEN } from 'secured/Secured.gql';
 
 function VerifyToken(Component) {
-
   function _VerifyToken(props) {
     return (
       <Query query={VERIFY_TOKEN}>
