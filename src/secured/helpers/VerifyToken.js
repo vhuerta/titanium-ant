@@ -8,10 +8,16 @@ function VerifyToken(Component) {
   function _VerifyToken(props) {
     return (
       <Query query={VERIFY_TOKEN}>
-        {({ loading, error, data }) => {
-          if (loading) return <h1>Loading...</h1>; // TODO: Create a loader component
-          if (error) return <Redirect to="/auth/login" />;
-          return <Component {...props} />;
+        {({ loading, error }) => {
+          switch (true) {
+          case Boolean(loading):
+            // TODO: Create a loader component
+            return <h1>Loading...</h1>;
+          case Boolean(error):
+            return <Redirect to="/auth/login" />;
+          default:
+            return <Component {...props} />;
+          }
         }}
       </Query>
     );
