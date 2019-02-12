@@ -1,5 +1,11 @@
 @charset "utf-8";
 
+:global {
+  html {
+    font-size: 14px !important;
+  }
+}
+
 $family-sans-serif: "Nunito", sans-serif;
 
 $purple: #6659f7;
